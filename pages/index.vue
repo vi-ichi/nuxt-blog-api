@@ -16,13 +16,12 @@ const active = ref(-1);
         :to="'/article/' + a.id"
         class="text-lg"
       >
+        <div v-if="active !== a.id">&nbsp;</div>
         <div class="aspect-square">
           <img :src="a.image" class="w-full h-full object-none" />
         </div>
         <div class="my-6">{{ a.preview }}</div>
-        <div class="text-[#E2BEFF]">
-          {{ active === a.id ? "Read more" : "&nbsp;" }}
-        </div>
+        <div v-if="active === a.id" class="text-[#E2BEFF]">Read more</div>
       </NuxtLink>
     </div>
   </div>
