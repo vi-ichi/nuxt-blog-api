@@ -5,8 +5,7 @@ const { data } = await useFetch(
 </script>
 
 <template>
-  <Header />
   <h1>{{ data.title }}</h1>
-  <nuxt-img :src="data.image" placeholder />
+  <NuxtImg :src="data.image" placeholder />
   <div>{{ data.description }}</div>
 </template>

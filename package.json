@@ -16,6 +16,7 @@
     "tailwindcss": "^3.3.3"
   },
   "dependencies": {
-    "@nuxt/image": "^1.0.0-rc.1"
+    "@nuxt/image": "^1.0.0-rc.1",
+    "@tailwindcss/aspect-ratio": "^0.4.2"
   }
 }

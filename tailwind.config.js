@@ -12,6 +12,11 @@ module.exports = {
     fontFamily: {
       sans: "TTCommons",
     },
+    extend: {
+      colors: {
+        black: "#101010",
+      },
+    },
   },
   plugins: [],
 };
